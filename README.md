@@ -1,5 +1,5 @@
 # nested-pop
-Nested populate for SailsJS
+Promise based nested populate for SailsJS
 
 ## Installation
 
