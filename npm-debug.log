@@ -1,0 +1,143 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/jamrizzi/.nvm/versions/node/v6.6.0/bin/node',
+1 verbose cli   '/home/jamrizzi/.nvm/versions/node/v6.6.0/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   './' ]
+2 info using npm@3.10.9
+3 info using node@v6.6.0
+4 verbose publish [ './' ]
+5 silly cache add args [ './', null ]
+6 verbose cache add spec ./
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: './',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: './',
+7 silly cache add   spec: '/home/jamrizzi/GroupThreads/rest-api/node_modules/nested-pop',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/jamrizzi/.npm/nested-pop/0.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/jamrizzi/.npm correctMkdir not in flight; initializing
+10 info lifecycle nested-pop@0.0.0~prepublish: nested-pop@0.0.0
+11 verbose lifecycle nested-pop@0.0.0~prepublish: unsafe-perm in lifecycle true
+12 verbose lifecycle nested-pop@0.0.0~prepublish: PATH: /home/jamrizzi/.nvm/versions/node/v6.6.0/lib/node_modules/npm/bin/node-gyp-bin:/home/jamrizzi/GroupThreads/rest-api/node_modules/nested-pop/node_modules/.bin:/home/jamrizzi/GroupThreads/rest-api/node_modules/.bin:/home/jamrizzi/.nvm/versions/node/v6.6.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+13 verbose lifecycle nested-pop@0.0.0~prepublish: CWD: /home/jamrizzi/GroupThreads/rest-api/node_modules/nested-pop
+14 silly lifecycle nested-pop@0.0.0~prepublish: Args: [ '-c', 'gulp prepublish' ]
+15 silly lifecycle nested-pop@0.0.0~prepublish: Returned: code: 0  signal: null
+16 verbose tar pack [ '/home/jamrizzi/.npm/nested-pop/0.0.0/package.tgz',
+16 verbose tar pack   '/home/jamrizzi/GroupThreads/rest-api/node_modules/nested-pop' ]
+17 verbose tarball /home/jamrizzi/.npm/nested-pop/0.0.0/package.tgz
+18 verbose folder /home/jamrizzi/GroupThreads/rest-api/node_modules/nested-pop
+19 verbose addLocalTarball adding from inside cache /home/jamrizzi/.npm/nested-pop/0.0.0/package.tgz
+20 verbose correctMkdir /home/jamrizzi/.npm correctMkdir not in flight; initializing
+21 silly cache afterAdd nested-pop@0.0.0
+22 verbose afterAdd /home/jamrizzi/.npm/nested-pop/0.0.0/package/package.json not in flight; writing
+23 verbose correctMkdir /home/jamrizzi/.npm correctMkdir not in flight; initializing
+24 verbose afterAdd /home/jamrizzi/.npm/nested-pop/0.0.0/package/package.json written
+25 silly publish { name: 'nested-pop',
+25 silly publish   version: '0.0.0',
+25 silly publish   description: 'Nested populate for SailsJS',
+25 silly publish   homepage: 'http://jam.jamrizzi.com',
+25 silly publish   author:
+25 silly publish    { name: 'Jam Risser',
+25 silly publish      email: 'jam@jamrizzi.com',
+25 silly publish      url: 'http://jam.jamrizzi.com' },
+25 silly publish   files: [ 'lib' ],
+25 silly publish   main: 'lib/index.js',
+25 silly publish   keywords:
+25 silly publish    [ 'nest',
+25 silly publish      'nested',
+25 silly publish      'deep',
+25 silly publish      'pop',
+25 silly publish      'populate',
+25 silly publish      'sails',
+25 silly publish      'sailsjs',
+25 silly publish      'child',
+25 silly publish      'grandchild' ],
+25 silly publish   devDependencies:
+25 silly publish    { eslint: '^3.1.1',
+25 silly publish      'eslint-config-xo-space': '^0.14.0',
+25 silly publish      gulp: '^3.9.0',
+25 silly publish      'gulp-eslint': '^2.0.0',
+25 silly publish      'gulp-exclude-gitignore': '^1.0.0',
+25 silly publish      'gulp-line-ending-corrector': '^1.0.1',
+25 silly publish      'gulp-istanbul': '^1.0.0',
+25 silly publish      'gulp-mocha': '^2.0.0',
+25 silly publish      'gulp-plumber': '^1.0.0',
+25 silly publish      'gulp-nsp': '^2.1.0' },
+25 silly publish   eslintConfig: { extends: 'xo-space', env: { mocha: true } },
+25 silly publish   repository:
+25 silly publish    { type: 'git',
+25 silly publish      url: 'git+ssh://git@github.com/groupthreads/rest-api.git' },
+25 silly publish   scripts: { prepublish: 'gulp prepublish', test: 'gulp' },
+25 silly publish   license: 'MIT',
+25 silly publish   dependencies:
+25 silly publish    { bluebird: '^3.4.6',
+25 silly publish      'change-case': '^3.0.0',
+25 silly publish      lodash: '^4.16.4' },
+25 silly publish   readme: '# nested-pop\nPromise based nested populate for Waterline and SailsJS\n\n## Installation\n\n```sh\n$ npm install --save nested-pop\n```\n\n## Usage\n\n```js\nvar nestedPop = require(\'nested-pop\');\n\nUser.find()\n.populate(\'dogs\')\n.then(function(users) {\n\n    return nestedPop(users, {\n        dogs: [\n            \'breed\'\n        ]\n    }).then(function(users) {\n        return users\n    }).catch(function(err) {\n        throw err;\n    });\n    \n}).catch(function(err) {\n    throw err;\n);\n```\n## License\n\nMIT © [Jam Risser](http://jam.jamrizzi.com)\n\n[npm-url]: https://npmjs.org/package/nested-pop\n',
+25 silly publish   readmeFilename: 'README.md',
+25 silly publish   gitHead: 'e3cfb7c41616148f7a7c2e15194d5a90a7be3749',
+25 silly publish   bugs: { url: 'https://github.com/groupthreads/rest-api/issues' },
+25 silly publish   _id: 'nested-pop@0.0.0',
+25 silly publish   _shasum: '4cb3c931bc6f0d8138a977754589205e5ea049f9',
+25 silly publish   _from: '.' }
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name nested-pop
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'nested-pop',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'nested-pop',
+30 silly mapToRegistry   name: 'nested-pop',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/nested-pop
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading /home/jamrizzi/.npm/nested-pop/0.0.0/package.tgz
+34 verbose request uri https://registry.npmjs.org/nested-pop
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 7:25:07 PM
+37 verbose request using bearer token for auth
+38 verbose request id 87997104ef7c1915
+39 http request PUT https://registry.npmjs.org/nested-pop
+40 http 403 https://registry.npmjs.org/nested-pop
+41 verbose headers { 'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   'content-length': '95',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Tue, 18 Oct 2016 00:25:09 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-dfw1830-DFW',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1476750308.430943,VS0,VE718',
+41 verbose headers   vary: 'Accept-Encoding' }
+42 verbose request invalidating /home/jamrizzi/.npm/registry.npmjs.org/nested-pop on PUT
+43 error publish Failed PUT 403
+44 verbose stack Error: "You cannot publish over the previously published version 0.0.0." : nested-pop
+44 verbose stack     at makeError (/home/jamrizzi/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (/home/jamrizzi/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+44 verbose stack     at Request._callback (/home/jamrizzi/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+44 verbose stack     at Request.self.callback (/home/jamrizzi/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+44 verbose stack     at emitTwo (events.js:106:13)
+44 verbose stack     at Request.emit (events.js:191:7)
+44 verbose stack     at Request.<anonymous> (/home/jamrizzi/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+44 verbose stack     at emitOne (events.js:96:13)
+44 verbose stack     at Request.emit (events.js:188:7)
+44 verbose stack     at IncomingMessage.<anonymous> (/home/jamrizzi/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/request/request.js:969:12)
+45 verbose statusCode 403
+46 verbose pkgid nested-pop
+47 verbose cwd /home/jamrizzi/GroupThreads/rest-api/node_modules/nested-pop
+48 error Linux 4.4.0-43-generic
+49 error argv "/home/jamrizzi/.nvm/versions/node/v6.6.0/bin/node" "/home/jamrizzi/.nvm/versions/node/v6.6.0/bin/npm" "publish" "./"
+50 error node v6.6.0
+51 error npm  v3.10.9
+52 error code E403
+53 error "You cannot publish over the previously published version 0.0.0." : nested-pop
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]
