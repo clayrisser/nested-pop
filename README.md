@@ -12,7 +12,21 @@ $ npm install --save nested-pop
 ```js
 var nestedPop = require('nested-pop');
 
-nestedPop('Rainbow');
+User.find()
+.populate('dogs')
+.then(function(users) {
+  nestedPop(users, {
+    pets: [
+      'breed'
+    ]
+  }).then(function(users) {
+    return users
+  }).catch(function(err) {
+    throw err;
+  });
+}).catch(function(err) {
+  throw err;
+);
 ```
 ## License
 
