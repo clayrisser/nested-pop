@@ -1,5 +1,5 @@
 # nested-pop
-Promise based nested populate for SailsJS
+Promise based nested populate for Waterline and SailsJS
 
 ## Installation
 
