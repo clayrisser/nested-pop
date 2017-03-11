@@ -21,7 +21,7 @@ User.find()
             'breed'
         ]
     }).then(function(users) {
-        return users
+        return users;
     }).catch(function(err) {
         throw err;
     });
@@ -48,7 +48,7 @@ User.find()
             ]
         } 
     }).then(function(users) {
-        return users
+        return users;
     }).catch(function(err) {
         throw err;
     });
@@ -73,7 +73,7 @@ User.find()
             'breed'
         ]
     }).then(function(users) {
-        return users
+        return users;
     }).catch(function(err) {
         throw err;
     });
