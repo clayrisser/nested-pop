@@ -1,6 +1,8 @@
 # nested-pop
 Promise based nested populate for Waterline and SailsJS
 
+![](assets/nested-pop.png)
+
 ## Installation
 
 ```sh
